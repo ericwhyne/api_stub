@@ -16,6 +16,8 @@ logging.basicConfig(format='%(levelname)s %(asctime)s %(filename)s %(lineno)d: %
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
+# NOTE: If you need to access data files, the path should be '/src/file.dat'
+
 
 class StubAPI(Resource):
     def __init__(self):

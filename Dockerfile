@@ -2,8 +2,7 @@ FROM ubuntu:14.04
 
 MAINTAINER John Beieler <jbeieler@caerusassociates.com>
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu/ $(lsb_release -sc) main
-universe" >> /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu/ $(lsb_release -sc) main universe" >> /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y build-essential python-setuptools \
 python-dev wget unzip
